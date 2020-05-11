@@ -13,7 +13,6 @@ class TestLogin():
     def test_login(self):
         driver = self.driver
         driver.get(util.URL)
-
         lp = loginpage(driver)
         lp.enter_username(util.USERNAME)
         lp.enter_password(util.PASSWORD)
