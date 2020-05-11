@@ -10,9 +10,6 @@ import allure
 @pytest.mark.usefixtures("test_setup")
 class TestLogin():
 
-
-
-
     def test_login(self):
         driver = self.driver
         driver.get(util.URL)
