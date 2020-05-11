@@ -19,13 +19,11 @@ class TestLogin():
         lp.enter_password(util.PASSWORD)
         lp.click_login()
 
-
     def test_logout(self):
 
         try:
             driver = self.driver
             hp = homepage(driver)
-
             hp.click_welcome()
             hp.click_logout()
             x = driver.title
